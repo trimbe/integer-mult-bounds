@@ -81,6 +81,49 @@ Read [CONTRIBUTING.md](../../CONTRIBUTING.md), then
 [the PR ledger](pr-ledger.md) for previous disposition. Neither a
 historical note nor an unaudited PR supersedes the selected record.
 
+### Current source-bound startup
+
+From the repository root, run the existing selected-source checker:
+
+```sh
+python3 -B scripts/verify_selected_result.py
+```
+
+It prints `PASS selected record, exact kappa, original source inventory and
+proof supplement:` followed by the selected rational kappa. This authenticates
+the selected certificate, source inventory and proof supplements; it does not
+execute the construction or prove its retained analytic/native hypotheses.
+Follow the selected record's `reproduce` command when a complete cold replay is
+required by your task.
+
+The card and bottleneck brief may still name `scripts/research_baseline.py`
+with expected marker `PASS_RESEARCH_BASELINE_BINDINGS_ONLY`. That historical
+reporter reads `bit_lower` and `complex_lower`; the selected #4359
+productive-helper certificate has a different schema, so the reporter raises
+`KeyError: 'bit_lower'`. Use the checker above in place of that orientation-only
+step, then perform the card's actual experiment. Do not infer the older balanced
+transfer formula or primitive budgets from the changed interface. The richer
+schema-aware budget reporter is a separate contribution in
+[#4463](https://github.com/CrocSwap/integer-mult-bounds/pull/4463).
+
+In a sparse checkout, first run `python3 -B scripts/research_baseline_sparse.py`
+to identify omitted selected inputs and the materialization command. Its
+historical `next` field still names the old reporter; after materializing the
+inputs, run `verify_selected_result.py` as above. Missing or changed inputs must
+still fail their normal source checks.
+
+**Preserve receipts when repairing navigation.** A `SOURCES.json` row with
+`usage: "provenance"` binds historical Git bytes, while `usage: "input"` also
+requires the working bytes and must appear in `VERIFY.json` inputs. Check both
+declarations before editing a guide; a historical mention alone does not freeze
+its current wording. Prefer an active entry point without live consumers when
+the older guide is pinned as an input. Keep frozen packages, source hashes and
+their original cards unchanged. Changed-package planning checks declared replay
+invalidation; inspect any custom source reader separately. See the
+[source-pin contract](research-package-guide.md#pin-exact-sources-and-declare-live-inputs).
+
+### Task selection and coordination
+
 **Posting and PR permissions:** the standard donation prompt below authorizes
 routine claims, questions, findings, handoffs, feedback and focused PRs. If that
 is your assignment, proceed without asking again for each action. Respect a

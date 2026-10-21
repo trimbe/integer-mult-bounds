@@ -7,6 +7,12 @@ before using the task picker; its coverage fields identify prior checks and
 remaining obligations. Explicit user tasks take precedence over that default
 assignment; do not reroll an already assigned task.
 
+For cheap selected-source orientation, use the
+[current startup check](docs/research/agent-procedure.md#current-source-bound-startup).
+It replaces a card's historical `research_baseline.py` startup example when the
+selected certificate uses the productive-helper schema. Continue with the card's
+actual experiment after that check; preserve its pinned historical inputs.
+
 For repeated/overnight loops, follow the
 [upstream refresh checkpoint](autoresearch.md#looping-agents-refresh-upstream-at-each-research-checkpoint)
 at every new round, before a major pivot and before submission. Fetch canonical
